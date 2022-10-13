@@ -1,0 +1,25 @@
+cp -v "filenametobecopied" /home/kali/document    -> this gives tells us what is happening and does the coping part too
+mv 
+touch "file.txt" "file1.txt" "file2.txt" ---> it can create N no of files at a time
+ls -l   ->> lists out all the files with the premission given to them 
+chmod +x  "filename"->adds premission of execution 
+chmod +r  "filename"->readable 
+chmod +w  "filename"->writable 
+chmod 777 filename.sh
+{
+    0 = 0  nothing
+    1 - executable(x)
+    2- writable(w)
+    3=1+2=w+x
+    4- readable(r)
+    5=4+1= r+x
+    6=4+2=r+w
+    7=r+w+x
+}
+
+sudo 
+{
+    sudo yum install package    ->>> red hat company
+    sudo apt-get install package ->> debian 
+    sudo dnf install package ->> fedora
+}

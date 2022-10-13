@@ -1,0 +1,12 @@
+import numpy as np
+mx=np.arange(1,101).reshape(10,10)
+print(mx)
+print(mx[0,0])
+print(mx[:,1])
+print(mx[1:4,1:4])
+print(mx[:,1:3])
+print(mx[::])
+print(mx[:])
+print(mx[:,:])
+print(mx.dtype)
+print(mx.itemsize)

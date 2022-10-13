@@ -1,0 +1,79 @@
+man commandName   ->> it gives the manual of the command
+pwd  ->>gives current working directory 
+echo 
+cd
+sudo bash   ->>switchs you to root 
+su UserName   ->> switches you to the specific user
+sudo useradd NewUserName   ->adds a new user
+sudo passwd UserName  -> changes the password of that user
+sudo userdel UserName -> deletes the user
+sudo groupadd UserName -> add the group
+sudo groupdel UserName -> deletes the group
+touch filename.txt filename.sh  ->> add the file to the directory
+sudo touch filename.txt  -->>  this is used if for the upper command it shows us the premission denied
+sudo vi filename.txt 
+{
+    press "i" to write anything into the file 
+    press esc to save and the then press ":wq" to write that into the file and quit 
+}
+cat --> it can read display or concatenate the existing file 
+{
+    cat cba.txt  -->>> displays the content in the file 
+    cat -b       adds line no to the no blank lines 
+    cat -n       adds line no to all the lines 
+    cat -        this is used to sequeze the blank lines into the one line 
+    cat -E       adds the $ symbols to the end of the line 
+}
+cp
+{
+    cp -n    ->> it doesnt overwrites the file 
+    cp -u    ->> it only copies when the source file is different from the distination file 
+    cp -R     ->>   
+}
+mv flag filename
+{  
+    mv -i   -> turns into the interactive mode where it asks before overwriting the file 
+    mv -u   -> same as cp
+    mv -v   -> 
+}
+rm
+{
+    rm -r  ->deletes the non empty directory too
+    rm -rp  -> deletes the non empty directory including parent and the sub directory
+
+}
+mkdir
+{
+    mkdir -p   -> multiple sub directory inside the parent directory
+}
+rmdir -> it can only delete the empty directory
+{
+    rmdir -p  -> deletes the parent and the child directory
+    rmdir -pv -> deletes the parent and child directory along with the verbos
+}
+grep wordname filename
+{
+    grep -i   -> case in sensitive
+    grep -n  -> returns making string with the line no
+    grep -v   -> returns the line not matching the search string 
+    grep -c    ->tells the no of lines having the string
+}
+sort
+{
+    sort -f  -> case in sensitive sorting 
+    sort -n   ->
+}
+chown  
+{
+    3 types of file premission in linux
+    user - affects the owner of the file 
+    group - 
+    other -
+
+    ls -l  -> shows files with premission
+    chown NewUserName filename   -> changes the ownership of the file and gives it to the NewUser
+}
+chmod
+{
+     
+}
